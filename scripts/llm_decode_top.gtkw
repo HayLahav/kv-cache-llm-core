@@ -1,0 +1,82 @@
+[*]
+[*] GTKWave save file for llm_decode_top (make wave)
+[*]
+[dumpfile] "sim_build/top/dump.vcd"
+[timestart] 0
+[size] 1680 960
+[pos] -1 -1
+*-20.000000 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 260
+[signals_width] 300
+[sst_expanded] 1
+[sst_vpaned_height] 300
+@28
+llm_decode_top.clk
+llm_decode_top.rst_n
+@200
+-AXI4-Stream slave
+@28
+llm_decode_top.s_axis_tvalid
+llm_decode_top.s_axis_tready
+llm_decode_top.s_axis_tlast
+@22
+llm_decode_top.s_axis_tdata[127:0]
+llm_decode_top.p_state[2:0]
+@200
+-KV cache (sinks + window)
+@24
+llm_decode_top.token_count[31:0]
+llm_decode_top.u_kv.sink_fill[15:0]
+llm_decode_top.u_kv.win_fill[15:0]
+llm_decode_top.u_kv.head_ptr[31:0]
+@22
+llm_decode_top.u_kv.rd_state[1:0]
+@28
+llm_decode_top.kv_m_valid
+llm_decode_top.kv_m_ready
+llm_decode_top.kv_m_phase
+llm_decode_top.kv_m_last
+@22
+llm_decode_top.kv_m_data[63:0]
+@200
+-INT4 unpack
+@28
+llm_decode_top.u_valid
+llm_decode_top.u_ready
+@22
+llm_decode_top.u_data[127:0]
+@200
+-Ping-pong buffer
+@22
+llm_decode_top.pp_bank_state[3:0]
+@28
+llm_decode_top.pp_wr_bank
+llm_decode_top.pp_rd_bank
+llm_decode_top.pp_wr_en
+llm_decode_top.pp_rd_en
+@200
+-Engine / feed / array
+@22
+llm_decode_top.e_state[2:0]
+llm_decode_top.sc_d[7:0]
+llm_decode_top.e_pass[7:0]
+@28
+llm_decode_top.tile_full
+llm_decode_top.feed_go
+llm_decode_top.a_valid
+llm_decode_top.a_first
+llm_decode_top.a_last
+llm_decode_top.arr_done
+llm_decode_top.cap_full_q
+@22
+llm_decode_top.pending[1:0]
+@200
+-AXI4-Stream master
+@28
+llm_decode_top.m_axis_tvalid
+llm_decode_top.m_axis_tready
+llm_decode_top.m_axis_tlast
+@22
+llm_decode_top.m_axis_tdata[127:0]
+[pattern_trace] 1
+[pattern_trace] 0
