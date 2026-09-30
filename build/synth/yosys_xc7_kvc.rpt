@@ -1,0 +1,32 @@
+
+37. Printing statistics.
+
+=== kv_cache_controller ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     1251 wires
+     4194 wire bits
+      196 public wires
+     1639 public wire bits
+       20 ports
+      431 port bits
+     2140 cells
+        1   BUFG
+       56   CARRY4
+      604   FDRE
+      266   IBUF
+       19   INV
+      128   LUT1
+       56   LUT2
+      259   LUT3
+       36   LUT4
+      143   LUT5
+      113   LUT6
+      212   MUXF7
+       80   MUXF8
+      165   OBUF
+        2   RAMB36E1
+
+   Estimated number of LCs:        551
+

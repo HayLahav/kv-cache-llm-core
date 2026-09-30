@@ -1,0 +1,25 @@
+
+27. Printing statistics.
+
+=== kv_unpack_dequant ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      115 wires
+      663 wire bits
+       48 public wires
+      590 public wire bits
+       11 ports
+      203 port bits
+      379 cells
+       72   IBUF
+       16   LUT1
+       16   LUT3
+       48   LUT4
+       32   LUT5
+       32   LUT6
+       32   MUXF7
+      131   OBUF
+
+   Estimated number of LCs:        128
+

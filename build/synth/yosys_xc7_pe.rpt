@@ -1,0 +1,26 @@
+
+47. Printing statistics.
+
+=== pe ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       47 wires
+      399 wire bits
+       24 public wires
+      191 public wire bits
+       14 ports
+       73 port bits
+      242 cells
+        1   BUFG
+        8   CARRY4
+        1   DSP48E1
+       87   FDRE
+       21   IBUF
+        5   INV
+       33   LUT2
+       34   LUT3
+       52   OBUF
+
+   Estimated number of LCs:         34
+

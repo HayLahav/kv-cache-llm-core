@@ -1,0 +1,269 @@
+
+
+Info: Logic utilisation before packing:
+Info:     Total LUT4s:      4720/83640     5%
+Info:         logic LUTs:   3966/83640     4%
+Info:         carry LUTs:    742/83640     0%
+Info:           RAM LUTs:      8/10455     0%
+Info:          RAMW LUTs:      4/20910     0%
+
+Info:      Total DFFs:      4495/83640     5%
+
+Info: Packing IOs..
+Info: Packing constants..
+Info: Packing carries...
+Info: Packing LUTs...
+Info: Packing LUT5-7s...
+Info: Packing FFs...
+Info:     1106 FFs paired with LUTs.
+Info: Generating derived timing constraints...
+Info: Promoting globals...
+Info:     promoting clock net clk$TRELLIS_IO_IN to global network
+Info: Checksum: 0x807f3754
+
+Info: Device utilisation:
+Info: 	          TRELLIS_IO:     297/    365    81%
+Info: 	                DCCA:       1/     56     1%
+Info: 	              DP16KD:       6/    208     2%
+Info: 	          MULT18X18D:      16/    156    10%
+Info: 	              ALU54B:       0/     78     0%
+Info: 	             EHXPLLL:       0/      4     0%
+Info: 	             EXTREFB:       0/      2     0%
+Info: 	                DCUA:       0/      2     0%
+Info: 	           PCSCLKDIV:       0/      2     0%
+Info: 	             IOLOGIC:       0/    224     0%
+Info: 	            SIOLOGIC:       0/    141     0%
+Info: 	                 GSR:       0/      1     0%
+Info: 	               JTAGG:       0/      1     0%
+Info: 	                OSCG:       0/      1     0%
+Info: 	               SEDGA:       0/      1     0%
+Info: 	                 DTR:       0/      1     0%
+Info: 	             USRMCLK:       0/      1     0%
+Info: 	             CLKDIVF:       0/      4     0%
+Info: 	           ECLKSYNCB:       0/     10     0%
+Info: 	             DLLDELD:       0/      8     0%
+Info: 	              DDRDLL:       0/      4     0%
+Info: 	             DQSBUFM:       0/     14     0%
+Info: 	     TRELLIS_ECLKBUF:       0/      8     0%
+Info: 	        ECLKBRIDGECS:       0/      2     0%
+Info: 	                DCSC:       0/      2     0%
+Info: 	          TRELLIS_FF:    4495/  83640     5%
+Info: 	        TRELLIS_COMB:    4890/  83640     5%
+Info: 	        TRELLIS_RAMW:       2/  10455     0%
+
+Info: Placed 0 cells based on constraints.
+Info: Creating initial analytic placement for 6591 cells, random placement wirelen = 731848.
+Info:     at initial placer iter 0, wirelen = 34359
+Info:     at initial placer iter 1, wirelen = 28278
+Info:     at initial placer iter 2, wirelen = 27441
+Info:     at initial placer iter 3, wirelen = 27544
+Info: Running main analytical placer, max placement attempts per cell = 11778231.
+Info:     at iteration #1, type ALL: wirelen solved = 27149, spread = 92949, legal = 99445; time = 0.72s
+Info:     at iteration #2, type ALL: wirelen solved = 31838, spread = 74228, legal = 80677; time = 0.78s
+Info:     at iteration #3, type ALL: wirelen solved = 34106, spread = 69012, legal = 76160; time = 0.70s
+Info:     at iteration #4, type ALL: wirelen solved = 36784, spread = 64912, legal = 74601; time = 0.73s
+Info:     at iteration #5, type ALL: wirelen solved = 38941, spread = 64280, legal = 71463; time = 0.58s
+Info:     at iteration #6, type ALL: wirelen solved = 41178, spread = 60645, legal = 66880; time = 0.67s
+Info:     at iteration #7, type ALL: wirelen solved = 42043, spread = 59966, legal = 68312; time = 0.68s
+Info:     at iteration #8, type ALL: wirelen solved = 42418, spread = 63306, legal = 68170; time = 0.65s
+Info:     at iteration #9, type ALL: wirelen solved = 43513, spread = 59354, legal = 67705; time = 0.65s
+Info:     at iteration #10, type ALL: wirelen solved = 43578, spread = 61856, legal = 66885; time = 0.64s
+Info:     at iteration #11, type ALL: wirelen solved = 44089, spread = 60657, legal = 67539; time = 0.54s
+Info: HeAP Placer Time: 12.22s
+Info:   of which solving equations: 7.42s
+Info:   of which spreading cells: 1.45s
+Info:   of which strict legalisation: 1.11s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 915, wirelen = 66880
+Info:   at iteration #5: temp = 0.000000, timing cost = 967, wirelen = 58580
+Info:   at iteration #10: temp = 0.000000, timing cost = 965, wirelen = 56590
+Info:   at iteration #15: temp = 0.000000, timing cost = 770, wirelen = 55122
+Info:   at iteration #20: temp = 0.000000, timing cost = 755, wirelen = 54641
+Info:   at iteration #25: temp = 0.000000, timing cost = 730, wirelen = 54429
+Info:   at iteration #28: temp = 0.000000, timing cost = 731, wirelen = 54387 
+Info: SA placement time 38.95s
+
+Info: Max frequency for clock '$glbnet$clk$TRELLIS_IO_IN': 125.13 MHz (FAIL at 200.00 MHz)
+
+Info: Max delay <async>                           -> posedge $glbnet$clk$TRELLIS_IO_IN: 10.78 ns
+Info: Max delay posedge $glbnet$clk$TRELLIS_IO_IN -> <async>                          : 16.67 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 12 endpoint(s)
+Info:          + represents [1,12) endpoint(s)
+Info: [ -2992,  -2621) |+
+Info: [ -2621,  -2250) |*+
+Info: [ -2250,  -1879) |****+
+Info: [ -1879,  -1508) |**************+
+Info: [ -1508,  -1137) |****************************+
+Info: [ -1137,   -766) |****************************************+
+Info: [  -766,   -395) |************************************+
+Info: [  -395,    -24) |************************************+
+Info: [   -24,    347) |********************************************+
+Info: [   347,    718) |************************************+
+Info: [   718,   1089) |****************************+
+Info: [  1089,   1460) |**************************+
+Info: [  1460,   1831) |*************************+
+Info: [  1831,   2202) |*******************************+
+Info: [  2202,   2573) |*********************************************+
+Info: [  2573,   2944) |***********************************************+
+Info: [  2944,   3315) |************************************************************ 
+Info: [  3315,   3686) |**********************************************************+
+Info: [  3686,   4057) |*****************************************************+
+Info: [  4057,   4428) |*********************************+
+Info: Checksum: 0x1dbb37c2
+Info: Routing globals...
+Info:     routing clock net $glbnet$clk$TRELLIS_IO_IN using global 0
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 23804 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |      173        826 |  173   826 |     23048|       1.21       1.21|
+Info:       2000 |      398       1601 |  225   775 |     22469|       0.61       1.82|
+Info:       3000 |      547       2452 |  149   851 |     21803|       0.73       2.55|
+Info:       4000 |      737       3262 |  190   810 |     21095|       0.72       3.26|
+Info:       5000 |      878       4121 |  141   859 |     20284|       0.80       4.06|
+Info:       6000 |      987       5012 |  109   891 |     19486|       0.84       4.90|
+Info:       7000 |     1070       5929 |   83   917 |     18609|       0.86       5.76|
+Info:       8000 |     1194       6805 |  124   876 |     17778|       0.69       6.45|
+Info:       9000 |     1309       7690 |  115   885 |     16910|       0.62       7.06|
+Info:      10000 |     1475       8524 |  166   834 |     16119|       0.72       7.79|
+Info:      11000 |     1633       9366 |  158   842 |     15310|       0.68       8.47|
+Info:      12000 |     1776      10210 |  143   844 |     14497|       1.02       9.48|
+Info:      13000 |     1965      10992 |  189   782 |     13787|       1.06      10.54|
+Info:      14000 |     2132      11746 |  167   754 |     13035|       0.96      11.50|
+Info:      15000 |     2283      12508 |  151   762 |     12225|       0.73      12.22|
+Info:      16000 |     2471      13257 |  188   749 |     11448|       0.60      12.83|
+Info:      17000 |     2654      13977 |  183   720 |     10676|       0.68      13.51|
+Info:      18000 |     2837      14655 |  183   678 |      9965|       0.59      14.09|
+Info:      19000 |     2998      15398 |  161   743 |      9214|       0.96      15.05|
+Info:      20000 |     3167      16185 |  169   787 |      8426|       0.79      15.85|
+Info:      21000 |     3379      16955 |  212   770 |      7690|       0.88      16.73|
+Info:      22000 |     3639      17682 |  260   727 |      7045|       0.99      17.71|
+Info:      23000 |     3858      18413 |  219   731 |      6302|       1.14      18.85|
+Info:      24000 |     4142      19103 |  284   690 |      5710|       1.21      20.06|
+Info:      25000 |     4442      19779 |  300   676 |      5129|       1.29      21.35|
+Info:      26000 |     4683      20532 |  241   753 |      4479|       1.18      22.53|
+Info:      27000 |     4723      21424 |   40   892 |      3535|       0.87      23.40|
+Info:      28000 |     4812      22268 |   89   844 |      2655|       0.77      24.17|
+Info:      29000 |     4955      23058 |  143   790 |      1854|       1.08      25.25|
+Info:      30000 |     5160      23804 |  205   746 |      1172|       1.08      26.33|
+Info:      31000 |     5372      24547 |  212   743 |       475|       0.76      27.09|
+Info:      31853 |     5661      25077 |  289   530 |         0|       1.06      28.15|
+Info: Routing complete.
+Info: Router1 time 28.15s
+Info: Checksum: 0xac70aca3
+
+Info: Critical path report for clock '$glbnet$clk$TRELLIS_IO_IN' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  4.26  4.26 Source u_kv.kmem.0.0.DOB17
+Info:    routing  1.49  5.76 Net u_kv.kmem.0.0_DOB17[0] (64,46) -> (64,32)
+Info:                          Sink u_kv.vmem.0.0_DOB17_LUT4_Z.B
+Info:                          Defined in:
+Info:                               C:\Users\hayla\oss-cad-suite\bin\../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.18  5.94 Source u_kv.vmem.0.0_DOB17_LUT4_Z.F
+Info:    routing  0.45  6.39 Net u_kv.vmem.0.0_DOB17[2] (64,32) -> (64,32)
+Info:                          Sink u_unpack.s_data_PFUMX_Z_36_BLUT_LUT4_Z.D
+Info:                          Defined in:
+Info:                               C:\Users\hayla\oss-cad-suite\bin\../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.31  6.70 Source u_unpack.s_data_PFUMX_Z_36_BLUT_LUT4_Z.OFX
+Info:    routing  0.69  7.38 Net kv_m_data[35] (64,32) -> (64,35)
+Info:                          Sink u_unpack.g_in_reg.id_q_TRELLIS_FF_Q_29.M
+Info:                          Defined in:
+Info:                               C:/projects/AI_Acc/rtl/kv_unpack_dequant.v:30.34-30.40
+Info:      setup  0.00  7.38 Source u_unpack.g_in_reg.id_q_TRELLIS_FF_Q_29.M
+Info: 4.75 ns logic, 2.63 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge $glbnet$clk$TRELLIS_IO_IN':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source s_axis_tdata[3]$tr_io.O
+Info:    routing  4.72  4.72 Net s_axis_tdata[3]$TRELLIS_IO_IN (126,74) -> (73,35)
+Info:                          Sink p_state_TRELLIS_FF_Q_2_DI_LUT4_Z_D_LUT4_Z.B
+Info:                          Defined in:
+Info:                               C:/projects/AI_Acc/rtl/ping_pong_buffer.v:40.29-40.36
+Info:      logic  0.18  4.90 Source p_state_TRELLIS_FF_Q_2_DI_LUT4_Z_D_LUT4_Z.F
+Info:    routing  0.46  5.36 Net p_state_TRELLIS_FF_Q_2_DI_LUT4_Z_D[1] (73,35) -> (73,35)
+Info:                          Sink p_state_TRELLIS_FF_Q_1_DI_LUT4_Z_D_LUT4_Z.C
+Info:                          Defined in:
+Info:                               C:\Users\hayla\oss-cad-suite\bin\../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.18  5.54 Source p_state_TRELLIS_FF_Q_1_DI_LUT4_Z_D_LUT4_Z.F
+Info:    routing  0.76  6.30 Net p_state_TRELLIS_FF_Q_1_DI_LUT4_Z_D[1] (73,35) -> (71,33)
+Info:                          Sink p_state_TRELLIS_FF_Q_1_DI_LUT4_Z_D_LUT4_C.C
+Info:                          Defined in:
+Info:                               C:\Users\hayla\oss-cad-suite\bin\../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.18  6.48 Source p_state_TRELLIS_FF_Q_1_DI_LUT4_Z_D_LUT4_C.F
+Info:    routing  1.20  7.68 Net p_state_TRELLIS_FF_Q_1_DI_LUT4_Z_D_LUT4_C_Z (71,33) -> (54,33)
+Info:                          Sink ld_addr_TRELLIS_FF_Q_6.CE
+Info:      setup  0.00  7.68 Source ld_addr_TRELLIS_FF_Q_6.CE
+Info: 0.54 ns logic, 7.14 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$clk$TRELLIS_IO_IN' -> '<async>':
+Info:       type curr  total name
+Info:   clk-to-q  0.40  0.40 Source o_i_TRELLIS_FF_Q.Q
+Info:    routing  1.72  2.12 Net o_i[0] (62,39) -> (61,35)
+Info:                          Sink o_i_CCU2C_B1_COUT_CCU2C_COUT$CCU2_COMB0.B
+Info:                          Defined in:
+Info:                               C:/projects/AI_Acc/rtl/llm_decode_top.v:511.28-511.38
+Info:                               C:\Users\hayla\oss-cad-suite\bin\../share/yosys/lattice/arith_map_ccu2c.v:38.23-38.25
+Info:      logic  0.18  2.30 Source o_i_CCU2C_B1_COUT_CCU2C_COUT$CCU2_COMB0.F
+Info:    routing  2.30  4.59 Net m_axis_tdata_LUT4_Z_10_C_PFUMX_Z_BLUT_LUT4_Z_D[4] (61,35) -> (48,43)
+Info:                          Sink m_axis_tdata_LUT4_Z_1_B_LUT4_Z_C_LUT4_Z_1.D
+Info:                          Defined in:
+Info:                               C:/projects/AI_Acc/rtl/llm_decode_top.v:449.38-449.49
+Info:                               C:\Users\hayla\oss-cad-suite\bin\../share/yosys/lattice/arith_map_ccu2c.v:34.26-34.27
+Info:      logic  0.18  4.77 Source m_axis_tdata_LUT4_Z_1_B_LUT4_Z_C_LUT4_Z_1.F
+Info:    routing  1.92  6.69 Net m_axis_tdata_LUT4_Z_12_B_LUT4_Z_D[1] (48,43) -> (39,32)
+Info:                          Sink m_axis_tdata_PFUMX_Z_16_BLUT_LUT4_Z_D_LUT4_Z_D_LUT4_Z_1.B
+Info:                          Defined in:
+Info:                               C:\Users\hayla\oss-cad-suite\bin\../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.18  6.87 Source m_axis_tdata_PFUMX_Z_16_BLUT_LUT4_Z_D_LUT4_Z_D_LUT4_Z_1.F
+Info:    routing  0.64  7.52 Net m_axis_tdata_PFUMX_Z_16_BLUT_LUT4_Z_D_LUT4_Z_D[3] (39,32) -> (39,33)
+Info:                          Sink m_axis_tdata_PFUMX_Z_16_BLUT_LUT4_Z_D_LUT4_Z.D
+Info:                          Defined in:
+Info:                               C:\Users\hayla\oss-cad-suite\bin\../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.18  7.70 Source m_axis_tdata_PFUMX_Z_16_BLUT_LUT4_Z_D_LUT4_Z.F
+Info:    routing  0.92  8.61 Net m_axis_tdata_PFUMX_Z_16_BLUT_LUT4_Z_D[2] (39,33) -> (48,33)
+Info:                          Sink m_axis_tdata_PFUMX_Z_16_BLUT_LUT4_Z.D
+Info:                          Defined in:
+Info:                               C:\Users\hayla\oss-cad-suite\bin\../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.31  8.92 Source m_axis_tdata_PFUMX_Z_16_BLUT_LUT4_Z.OFX
+Info:    routing  5.25  14.17 Net m_axis_tdata[67]$TRELLIS_IO_OUT (48,33) -> (126,68)
+Info:                          Sink m_axis_tdata[67]$tr_io.I
+Info:                          Defined in:
+Info:                               C:/projects/AI_Acc/rtl/llm_decode_top.v:44.36-44.48
+Info: 1.42 ns logic, 12.75 ns routing
+
+Warning: Max frequency for clock '$glbnet$clk$TRELLIS_IO_IN': 135.48 MHz (FAIL at 200.00 MHz)
+
+Info: Max delay <async>                           -> posedge $glbnet$clk$TRELLIS_IO_IN: 7.68 ns
+Info: Max delay posedge $glbnet$clk$TRELLIS_IO_IN -> <async>                          : 14.17 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 18 endpoint(s)
+Info:          + represents [1,18) endpoint(s)
+Info: [ -2381,  -2047) |+
+Info: [ -2047,  -1713) |+
+Info: [ -1713,  -1379) |+
+Info: [ -1379,  -1045) |**+
+Info: [ -1045,   -711) |******+
+Info: [  -711,   -377) |***************+
+Info: [  -377,    -43) |***********************+
+Info: [   -43,    291) |********************+
+Info: [   291,    625) |******************+
+Info: [   625,    959) |**************************************+
+Info: [   959,   1293) |********************************************+
+Info: [  1293,   1627) |************************+
+Info: [  1627,   1961) |************+
+Info: [  1961,   2295) |***********+
+Info: [  2295,   2629) |********************+
+Info: [  2629,   2963) |**************************+
+Info: [  2963,   3297) |***************************************+
+Info: [  3297,   3631) |************************************************************ 
+Info: [  3631,   3965) |*************************************************+
+Info: [  3965,   4299) |****************************+
+1 warning, 0 errors
+
+Info: Program finished normally.

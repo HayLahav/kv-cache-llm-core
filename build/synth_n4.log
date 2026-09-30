@@ -1,0 +1,21 @@
+== Yosys flow: N=4, target 200.0 MHz, reports in C:/projects/AI_Acc/build/synth ==
+Warning: Replacing memory \g_col_skew[3].b_sr with list of registers. See C:/projects/AI_Acc/rtl/systolic_array.v:91
+Warning: Replacing memory \g_col_skew[2].b_sr with list of registers. See C:/projects/AI_Acc/rtl/systolic_array.v:91
+Warning: Replacing memory \g_col_skew[1].b_sr with list of registers. See C:/projects/AI_Acc/rtl/systolic_array.v:91
+Warning: Replacing memory \g_col_skew[0].b_sr with list of registers. See C:/projects/AI_Acc/rtl/systolic_array.v:91
+Warning: Replacing memory \g_row_skew[3].a_sr with list of registers. See C:/projects/AI_Acc/rtl/systolic_array.v:62
+Warning: Replacing memory \g_row_skew[2].a_sr with list of registers. See C:/projects/AI_Acc/rtl/systolic_array.v:62
+Warning: Replacing memory \g_row_skew[1].a_sr with list of registers. See C:/projects/AI_Acc/rtl/systolic_array.v:62
+Warning: Replacing memory \g_row_skew[0].a_sr with list of registers. See C:/projects/AI_Acc/rtl/systolic_array.v:62
+Warning: Resizing cell port llm_decode_top.u_kv.kmem.0.0.ADDRBWRADDR from 17 bits to 16 bits.
+Warning: Resizing cell port llm_decode_top.u_kv.kmem.0.0.ADDRARDADDR from 17 bits to 16 bits.
+Warning: Resizing cell port llm_decode_top.u_kv.vmem.0.0.ADDRBWRADDR from 17 bits to 16 bits.
+Warning: Resizing cell port llm_decode_top.u_kv.vmem.0.0.ADDRARDADDR from 17 bits to 16 bits.
+Warning: Resizing cell port kv_cache_controller.vmem.0.0.ADDRBWRADDR from 17 bits to 16 bits.
+Warning: Resizing cell port kv_cache_controller.vmem.0.0.ADDRARDADDR from 17 bits to 16 bits.
+Warning: Resizing cell port kv_cache_controller.kmem.0.0.ADDRBWRADDR from 17 bits to 16 bits.
+Warning: Resizing cell port kv_cache_controller.kmem.0.0.ADDRARDADDR from 17 bits to 16 bits.
+== nextpnr-ecp5 (LFE5UM-85F, CABGA756, 200.0 MHz target) ==
+RESULT: Info: Max frequency for clock '$glbnet$clk$TRELLIS_IO_IN': 104.81 MHz (FAIL at 200.00 MHz)
+RESULT: Warning: Max frequency for clock '$glbnet$clk$TRELLIS_IO_IN': 140.29 MHz (FAIL at 200.00 MHz)
+== synthesis complete; reports in C:/projects/AI_Acc/build/synth ==

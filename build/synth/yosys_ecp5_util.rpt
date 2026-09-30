@@ -1,0 +1,24 @@
+
+59. Printing statistics.
+
+=== llm_decode_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     4177 wires
+    19764 wire bits
+     4177 public wires
+    19764 public wire bits
+       12 ports
+      297 port bits
+     9708 cells
+       20   $scopeinfo
+      371   CCU2C
+        6   DP16KD
+      172   L6MUX21
+     3966   LUT4
+       16   MULT18X18D
+      660   PFUMX
+        2   TRELLIS_DPR16X4
+     4495   TRELLIS_FF
+

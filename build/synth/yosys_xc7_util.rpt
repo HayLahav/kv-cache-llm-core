@@ -1,0 +1,38 @@
+
+16. Printing statistics.
+
+=== llm_decode_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     2968 wires
+    16260 wire bits
+      898 public wires
+     9663 public wire bits
+       12 ports
+      297 port bits
+     7675 cells
+       20   $scopeinfo
+        1   BUFG
+      198   CARRY4
+       16   DSP48E1
+     3595   FDRE
+        1   FDSE
+      133   IBUF
+      171   INV
+      128   LUT1
+      683   LUT2
+      971   LUT3
+      164   LUT4
+      267   LUT5
+      782   LUT6
+      266   MUXF7
+       93   MUXF8
+      164   OBUF
+        2   RAM32M
+        2   RAMB18E1
+        2   RAMB36E1
+       16   SRL16E
+
+   Estimated number of LCs:       2184
+
